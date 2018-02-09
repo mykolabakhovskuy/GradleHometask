@@ -5,7 +5,7 @@ pipeline {
             agent any
             steps {
                 sh 'rm -rf GradleHometask/'
-                sh 'git clone https://github.com/mykolabakhovskuy/GradleHometask.git'
+//                sh 'git clone https://github.com/mykolabakhovskuy/GradleHometask.git'
             }
         }
         stage('Make build') {
