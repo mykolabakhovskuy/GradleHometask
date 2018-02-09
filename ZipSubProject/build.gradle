@@ -1,0 +1,10 @@
+plugins {
+    id 'base'
+}
+task createzip(type: Zip) {
+def var = "hostname".execute().text.trim()
+def var1 = "date -I".execute().text.trim()
+    from '/home/kolakej/gradleTesst'
+	archiveName "${var}${var1}.zip"
+destinationDir(file('/home/kolakej'))
+}
