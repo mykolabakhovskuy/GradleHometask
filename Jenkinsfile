@@ -12,7 +12,7 @@ pipeline {
             agent {
                 docker { 
                     image 'gradle:alpine'
-                     customWorkspace 'workspace/testPipeline/GradleHometask'
+//                     customWorkspace 'workspace/testPipeline/GradleHometask'
                 }
             } 
             steps{
