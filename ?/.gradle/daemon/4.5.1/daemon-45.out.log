@@ -1,0 +1,277 @@
+15:39:03.015 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [-XX:+HeapDumpOnOutOfMemoryError, -Xmx1024m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant]
+15:39:03.050 [INFO] [org.gradle.launcher.daemon.server.health.gc.GarbageCollectionMonitor] Unable to determine a garbage collection monitoring strategy for JVMStrategy{Oracle Corporation version 1.8.0_151}
+15:39:03.183 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=52e568f7-0839-4e2a-93a4-7d6565152743,javaHome=/usr/lib/jvm/java-1.8-openjdk,daemonRegistryDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask/?/.gradle/daemon,pid=45,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+15:39:03.225 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface eth0
+15:39:03.226 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+15:39:03.226 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+15:39:03.228 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /172.17.0.2
+15:39:03.230 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote multicast interface eth0
+15:39:03.231 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+15:39:03.232 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+15:39:03.233 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? false
+15:39:03.234 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+15:39:03.238 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [ccd67095-ecd1-4a51-90f4-ede7159062d7 port:45233, addresses:[/127.0.0.1]].
+15:39:03.252 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Fri Feb 09 15:39:03 GMT 2018, with address: [ccd67095-ecd1-4a51-90f4-ede7159062d7 port:45233, addresses:[/127.0.0.1]]
+15:39:03.253 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [ccd67095-ecd1-4a51-90f4-ede7159062d7 port:45233, addresses:[/127.0.0.1]]
+15:39:03.253 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=52e568f7-0839-4e2a-93a4-7d6565152743,javaHome=/usr/lib/jvm/java-1.8-openjdk,daemonRegistryDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask/?/.gradle/daemon,pid=45,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+15:39:03.255 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [ccd67095-ecd1-4a51-90f4-ede7159062d7 port:45233, addresses:[/127.0.0.1]], context: DefaultDaemonContext[uid=52e568f7-0839-4e2a-93a4-7d6565152743,javaHome=/usr/lib/jvm/java-1.8-openjdk,daemonRegistryDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask/?/.gradle/daemon,pid=45,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+15:39:03.266 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+15:39:03.270 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+15:39:03.276 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+15:39:03.277 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+15:39:03.281 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+15:39:03.296 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+15:39:03.303 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+15:39:03.304 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+15:39:03.309 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:36840 to /127.0.0.1:45233.
+15:39:03.506 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: received class org.gradle.launcher.daemon.protocol.Build
+15:39:03.507 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 13: Received non-IO message from client: Build{id=ca881696-677f-4b89-b7f5-a2943325dcfe.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask}
+15:39:03.508 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=ca881696-677f-4b89-b7f5-a2943325dcfe.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask}.
+15:39:03.508 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=ca881696-677f-4b89-b7f5-a2943325dcfe.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask} with connection: socket connection from /127.0.0.1:45233 to /127.0.0.1:36840.
+15:39:03.511 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=ca881696-677f-4b89-b7f5-a2943325dcfe.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45233 to /127.0.0.1:36840] after 0.0 minutes of idle
+15:39:03.512 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [ccd67095-ecd1-4a51-90f4-ede7159062d7 port:45233, addresses:[/127.0.0.1]]
+15:39:03.512 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [ccd67095-ecd1-4a51-90f4-ede7159062d7 port:45233, addresses:[/127.0.0.1]]
+15:39:03.513 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+15:39:03.514 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+15:39:03.517 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+15:39:03.517 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+15:39:03.518 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+15:39:03.521 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=ca881696-677f-4b89-b7f5-a2943325dcfe.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask}. Dispatching build started information...
+15:39:03.521 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+15:39:03.538 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin, RUN_DISPLAY_URL=http://10.5.0.32:8080/job/testPipeline/31/display/redirect, HUDSON_HOME=/var/lib/jenkins, RUN_CHANGES_DISPLAY_URL=http://10.5.0.32:8080/job/testPipeline/31/display/redirect?page=changes, JOB_URL=http://10.5.0.32:8080/job/testPipeline/, JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, BUILD_ID=31, JENKINS_NODE_COOKIE=2b310c1e-3dcc-4002-9698-a3d88b536a56, LANG=C.UTF-8, JOB_NAME=testPipeline, GRADLE_HOME=/opt/gradle, LD_LIBRARY_PATH=/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64:/usr/lib/jvm/java-1.8-openjdk/jre/../lib/amd64, NODE_LABELS=master, HUDSON_URL=http://10.5.0.32:8080/, JENKINS_SERVER_COOKIE=durable-1ad5dcce20513040e2a5573b6401cbab, WORKSPACE=/var/lib/jenkins/workspace/testPipeline/GradleHometask, PWD=/var/lib/jenkins/workspace/testPipeline/GradleHometask, JAVA_VERSION=8u151, JENKINS_URL=http://10.5.0.32:8080/, BUILD_TAG=jenkins-testPipeline-31, STAGE_NAME=Make build, GRADLE_VERSION=4.5.1, EXECUTOR_NUMBER=1, HUDSON_SERVER_COOKIE=18010bed04407a88, JOB_BASE_NAME=testPipeline, OLDPWD=/opt/gradle, CLASSPATH=/opt/gradle/lib/gradle-launcher-4.5.1.jar, BUILD_NUMBER=31, NODE_NAME=master, BUILD_DISPLAY_NAME=#31, BUILD_URL=http://10.5.0.32:8080/job/testPipeline/31/, HOSTNAME=adef55e8b1a2, JAVA_ALPINE_VERSION=8.151.12-r0, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, JOB_DISPLAY_URL=http://10.5.0.32:8080/job/testPipeline/display/redirect, HOME=/, SHLVL=3}
+15:39:03.549 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+15:39:03.550 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 45). The daemon log file: /var/lib/jenkins/workspace/testPipeline/GradleHometask/?/.gradle/daemon/4.5.1/daemon-45.out.log
+15:39:03.552 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 954.7 MB]
+15:39:03.557 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+15:39:03.558 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=52e568f7-0839-4e2a-93a4-7d6565152743,javaHome=/usr/lib/jvm/java-1.8-openjdk,daemonRegistryDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask/?/.gradle/daemon,pid=45,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+Download https://jcenter.bintray.com/org/springframework/boot/spring-boot-gradle-plugin/1.5.10.RELEASE/spring-boot-gradle-plugin-1.5.10.RELEASE.pom
+Download https://jcenter.bintray.com/org/springframework/boot/spring-boot-tools/1.5.10.RELEASE/spring-boot-tools-1.5.10.RELEASE.pom
+Download https://jcenter.bintray.com/org/springframework/boot/spring-boot-parent/1.5.10.RELEASE/spring-boot-parent-1.5.10.RELEASE.pom
+Download https://jcenter.bintray.com/org/springframework/boot/spring-boot-dependencies/1.5.10.RELEASE/spring-boot-dependencies-1.5.10.RELEASE.pom
+Download https://jcenter.bintray.com/com/fasterxml/jackson/jackson-bom/2.8.10/jackson-bom-2.8.10.pom
+Download https://jcenter.bintray.com/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom
+Download https://jcenter.bintray.com/com/fasterxml/oss-parent/27/oss-parent-27.pom
+Download https://jcenter.bintray.com/org/apache/logging/log4j/log4j-bom/2.7/log4j-bom-2.7.pom
+Download https://jcenter.bintray.com/org/apache/apache/9/apache-9.pom
+Download https://jcenter.bintray.com/org/springframework/spring-framework-bom/4.3.14.RELEASE/spring-framework-bom-4.3.14.RELEASE.pom
+Download https://jcenter.bintray.com/org/springframework/data/spring-data-releasetrain/Ingalls-SR10/spring-data-releasetrain-Ingalls-SR10.pom
+Download https://jcenter.bintray.com/org/springframework/data/build/spring-data-build/1.9.10.RELEASE/spring-data-build-1.9.10.RELEASE.pom
+Download https://jcenter.bintray.com/org/springframework/integration/spring-integration-bom/4.3.14.RELEASE/spring-integration-bom-4.3.14.RELEASE.pom
+Download https://jcenter.bintray.com/org/springframework/security/spring-security-bom/4.2.4.RELEASE/spring-security-bom-4.2.4.RELEASE.pom
+Download https://jcenter.bintray.com/io/spring/gradle/dependency-management-plugin/1.0.4.RELEASE/dependency-management-plugin-1.0.4.RELEASE.pom
+Download https://jcenter.bintray.com/org/springframework/boot/spring-boot-loader-tools/1.5.10.RELEASE/spring-boot-loader-tools-1.5.10.RELEASE.pom
+Download https://jcenter.bintray.com/org/springframework/spring-core/4.3.14.RELEASE/spring-core-4.3.14.RELEASE.pom
+Download https://jcenter.bintray.com/commons-logging/commons-logging/1.2/commons-logging-1.2.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/34/commons-parent-34.pom
+Download https://jcenter.bintray.com/org/apache/apache/13/apache-13.pom
+Download https://jcenter.bintray.com/org/springframework/boot/spring-boot-gradle-plugin/1.5.10.RELEASE/spring-boot-gradle-plugin-1.5.10.RELEASE.jar
+Download https://jcenter.bintray.com/org/springframework/boot/spring-boot-loader-tools/1.5.10.RELEASE/spring-boot-loader-tools-1.5.10.RELEASE.jar
+Download https://jcenter.bintray.com/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+Download https://jcenter.bintray.com/org/springframework/spring-core/4.3.14.RELEASE/spring-core-4.3.14.RELEASE.jar
+Download https://jcenter.bintray.com/io/spring/gradle/dependency-management-plugin/1.0.4.RELEASE/dependency-management-plugin-1.0.4.RELEASE.jar
+:clean
+:ZipSubProject:clean UP-TO-DATE
+:compileJava
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/1.5.10.RELEASE/spring-boot-starter-parent-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/1.5.10.RELEASE/spring-boot-starter-thymeleaf-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/1.5.10.RELEASE/spring-boot-starter-actuator-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starters/1.5.10.RELEASE/spring-boot-starters-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/1.5.10.RELEASE/spring-boot-actuator-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/1.5.10.RELEASE/spring-boot-starter-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/1.5.10.RELEASE/spring-boot-starter-web-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-spring4/2.1.6.RELEASE/thymeleaf-spring4-2.1.6.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/nz/net/ultraq/thymeleaf/thymeleaf-layout-dialect/1.4.0/thymeleaf-layout-dialect-1.4.0.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/1.5.10.RELEASE/spring-boot-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/1.5.10.RELEASE/spring-boot-autoconfigure-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/1.5.10.RELEASE/spring-boot-starter-logging-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-context/4.3.14.RELEASE/spring-context-4.3.14.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/1.5.10.RELEASE/spring-boot-starter-tomcat-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/5.3.6.Final/hibernate-validator-5.3.6.Final.pom
+Download https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator-parent/5.3.6.Final/hibernate-validator-parent-5.3.6.Final.pom
+Download https://repo.maven.apache.org/maven2/org/jboss/arquillian/arquillian-bom/1.1.11.Final/arquillian-bom-1.1.11.Final.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.3/shrinkwrap-bom-1.2.3.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-web/4.3.14.RELEASE/spring-web-4.3.14.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.2.0/shrinkwrap-resolver-bom-2.2.0.pom
+Download https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-8/shrinkwrap-descriptors-bom-2.0.0-alpha-8.pom
+Download https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom
+Download https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf/2.1.6.RELEASE/thymeleaf-2.1.6.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom
+Download https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/2.4.13/groovy-2.4.13.pom
+Download https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.pom
+Download https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.pom
+Download https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.1.11/logback-parent-1.1.11.pom
+Download https://repo.maven.apache.org/maven2/org/slf4j/log4j-over-slf4j/1.7.25/log4j-over-slf4j-1.7.25.pom
+Download https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.pom
+Download https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.pom
+Download https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.10/jackson-core-2.8.10.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-aop/4.3.14.RELEASE/spring-aop-4.3.14.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-beans/4.3.14.RELEASE/spring-beans-4.3.14.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-expression/4.3.14.RELEASE/spring-expression-4.3.14.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-el/8.5.27/tomcat-embed-el-8.5.27.pom
+Download https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/8.5.27/tomcat-embed-core-8.5.27.pom
+Download https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.27/tomcat-embed-websocket-8.5.27.pom
+Download https://repo.maven.apache.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.pom
+Download https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.1.Final/jboss-logging-3.3.1.Final.pom
+Download https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/15/jboss-parent-15.pom
+Download https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.3.4/classmate-1.3.4.pom
+Download https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/24/oss-parent-24.pom
+Download https://repo.maven.apache.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.pom
+Download https://repo.maven.apache.org/maven2/ognl/ognl/3.0.8/ognl-3.0.8.pom
+Download https://repo.maven.apache.org/maven2/org/unbescape/unbescape/1.1.0.RELEASE/unbescape-1.1.0.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+Download https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.pom
+Download https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-annotations-api/8.5.27/tomcat-annotations-api-8.5.27.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/1.5.10.RELEASE/spring-boot-starter-thymeleaf-1.5.10.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/1.5.10.RELEASE/spring-boot-starter-actuator-1.5.10.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/1.5.10.RELEASE/spring-boot-actuator-1.5.10.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/1.5.10.RELEASE/spring-boot-starter-1.5.10.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-spring4/2.1.6.RELEASE/thymeleaf-spring4-2.1.6.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/nz/net/ultraq/thymeleaf/thymeleaf-layout-dialect/1.4.0/thymeleaf-layout-dialect-1.4.0.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/1.5.10.RELEASE/spring-boot-autoconfigure-1.5.10.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/1.5.10.RELEASE/spring-boot-1.5.10.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/1.5.10.RELEASE/spring-boot-starter-logging-1.5.10.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-web/4.3.14.RELEASE/spring-web-4.3.14.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-context/4.3.14.RELEASE/spring-context-4.3.14.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-aop/4.3.14.RELEASE/spring-aop-4.3.14.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-beans/4.3.14.RELEASE/spring-beans-4.3.14.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-expression/4.3.14.RELEASE/spring-expression-4.3.14.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar
+Download https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/1.5.10.RELEASE/spring-boot-starter-tomcat-1.5.10.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/5.3.6.Final/hibernate-validator-5.3.6.Final.jar
+Download https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf/2.1.6.RELEASE/thymeleaf-2.1.6.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar
+Download https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar
+Download https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar
+Download https://repo.maven.apache.org/maven2/org/slf4j/log4j-over-slf4j/1.7.25/log4j-over-slf4j-1.7.25.jar
+Download https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar
+Download https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/2.4.13/groovy-2.4.13.jar
+Download https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar
+Download https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.10/jackson-core-2.8.10.jar
+Download https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.27/tomcat-embed-websocket-8.5.27.jar
+Download https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/8.5.27/tomcat-embed-core-8.5.27.jar
+Download https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-el/8.5.27/tomcat-embed-el-8.5.27.jar
+Download https://repo.maven.apache.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar
+Download https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.1.Final/jboss-logging-3.3.1.Final.jar
+Download https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar
+Download https://repo.maven.apache.org/maven2/ognl/ognl/3.0.8/ognl-3.0.8.jar
+Download https://repo.maven.apache.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar
+Download https://repo.maven.apache.org/maven2/org/unbescape/unbescape/1.1.0.RELEASE/unbescape-1.1.0.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar
+Download https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-annotations-api/8.5.27/tomcat-annotations-api-8.5.27.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/1.5.10.RELEASE/spring-boot-starter-web-1.5.10.RELEASE.jar
+:processResources
+:classes
+:findMainClass
+:jar
+:bootRepackage
+:assemble
+:compileTestJava
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/1.5.10.RELEASE/spring-boot-starter-test-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/com/nitorcreations/junit-runners/1.2/junit-runners-1.2.pom
+Download https://repo.maven.apache.org/maven2/org/ow2/asm/asm/4.1/asm-4.1.pom
+Download https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/4.1/asm-commons-4.1.pom
+Download https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/4.1/asm-parent-4.1.pom
+Download https://repo.maven.apache.org/maven2/org/ow2/ow2/1.3/ow2-1.3.pom
+Download https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/1.5.10.RELEASE/spring-boot-test-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/1.5.10.RELEASE/spring-boot-test-autoconfigure-1.5.10.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/org/assertj/assertj-core/2.6.0/assertj-core-2.6.0.pom
+Download https://repo.maven.apache.org/maven2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.pom
+Download https://repo.maven.apache.org/maven2/org/assertj/assertj-parent-pom/2.1.4/assertj-parent-pom-2.1.4.pom
+Download https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+Download https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
+Download https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+Download https://repo.maven.apache.org/maven2/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-test/4.3.14.RELEASE/spring-test-4.3.14.RELEASE.pom
+Download https://repo.maven.apache.org/maven2/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.pom
+Download https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/4.1/asm-tree-4.1.pom
+Download https://repo.maven.apache.org/maven2/net/minidev/json-smart/2.2.1/json-smart-2.2.1.pom
+Download https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.pom
+Download https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/2.1/objenesis-parent-2.1.pom
+Download https://repo.maven.apache.org/maven2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.pom
+Download https://repo.maven.apache.org/maven2/net/minidev/accessors-smart/1.1/accessors-smart-1.1.pom
+Download https://repo.maven.apache.org/maven2/net/minidev/minidev-parent/2.2/minidev-parent-2.2.pom
+Download https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom
+Download https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/1.5.10.RELEASE/spring-boot-starter-test-1.5.10.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/com/nitorcreations/junit-runners/1.2/junit-runners-1.2.jar
+Download https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/4.1/asm-commons-4.1.jar
+Download https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/4.1/asm-tree-4.1.jar
+Download https://repo.maven.apache.org/maven2/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar
+Download https://repo.maven.apache.org/maven2/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar
+Download https://repo.maven.apache.org/maven2/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar
+Download https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/1.5.10.RELEASE/spring-boot-test-autoconfigure-1.5.10.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/1.5.10.RELEASE/spring-boot-test-1.5.10.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/assertj/assertj-core/2.6.0/assertj-core-2.6.0.jar
+Download https://repo.maven.apache.org/maven2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar
+Download https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar
+Download https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+Download https://repo.maven.apache.org/maven2/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0.jar
+Download https://repo.maven.apache.org/maven2/org/springframework/spring-test/4.3.14.RELEASE/spring-test-4.3.14.RELEASE.jar
+Download https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.jar
+Download https://repo.maven.apache.org/maven2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar
+Download https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.jar
+:processTestResources NO-SOURCE
+:testClasses
+:test
+2018-02-09 15:40:09.131  INFO 128 --- [       Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@26be393b: startup date [Fri Feb 09 15:40:03 GMT 2018]; root of context hierarchy
+:check
+:build
+:ZipSubProject:assemble UP-TO-DATE
+:ZipSubProject:check UP-TO-DATE
+:ZipSubProject:build UP-TO-DATE
+
+BUILD SUCCESSFUL in 1m 8s
+9 actionable tasks: 8 executed, 1 up-to-date
+15:40:09.348 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+15:40:09.365 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+15:40:09.365 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=ca881696-677f-4b89-b7f5-a2943325dcfe.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45233 to /127.0.0.1:36840]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@11c5f5e6 with state Busy
+15:40:09.365 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=ca881696-677f-4b89-b7f5-a2943325dcfe.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45233 to /127.0.0.1:36840]
+15:40:09.366 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+15:40:09.366 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [ccd67095-ecd1-4a51-90f4-ede7159062d7 port:45233, addresses:[/127.0.0.1]]
+15:40:09.366 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [ccd67095-ecd1-4a51-90f4-ede7159062d7 port:45233, addresses:[/127.0.0.1]]
+15:40:09.366 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+15:40:09.367 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+15:40:09.367 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+15:40:09.368 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=null]
+15:40:09.368 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: dispatching class org.gradle.launcher.daemon.protocol.Success
+15:40:09.369 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+15:40:09.374 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: received class org.gradle.launcher.daemon.protocol.CloseInput
+15:40:09.375 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 13: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@20c57d1d
+15:40:09.377 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: received class org.gradle.launcher.daemon.protocol.Finished
+15:40:09.377 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 13: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@3fea93bb
+15:40:09.378 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+15:40:09.378 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 13: received null
+15:40:09.378 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 13: Received end-of-input from client.
+15:40:09.379 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=ca881696-677f-4b89-b7f5-a2943325dcfe.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask}
+15:40:09.380 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+15:40:09.380 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: stopping connection
+15:40:09.380 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 12: stopping connection
+15:40:11.117 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:36864 to /127.0.0.1:45233.
+15:40:11.241 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 42: received class org.gradle.launcher.daemon.protocol.Build
+15:40:11.249 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 42: Received non-IO message from client: Build{id=5b79c24d-6119-4dcb-8aa4-35e7979f9f2f.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask}
+15:40:11.249 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=5b79c24d-6119-4dcb-8aa4-35e7979f9f2f.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask}.
+15:40:11.250 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=5b79c24d-6119-4dcb-8aa4-35e7979f9f2f.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask} with connection: socket connection from /127.0.0.1:45233 to /127.0.0.1:36864.
+15:40:11.250 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=5b79c24d-6119-4dcb-8aa4-35e7979f9f2f.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45233 to /127.0.0.1:36864] after 0.0 minutes of idle
+15:40:11.250 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [ccd67095-ecd1-4a51-90f4-ede7159062d7 port:45233, addresses:[/127.0.0.1]]
+15:40:11.250 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [ccd67095-ecd1-4a51-90f4-ede7159062d7 port:45233, addresses:[/127.0.0.1]]
+15:40:11.251 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+15:40:11.251 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+15:40:11.252 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+15:40:11.252 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+15:40:11.253 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+15:40:11.253 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=5b79c24d-6119-4dcb-8aa4-35e7979f9f2f.1, currentDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask}. Dispatching build started information...
+15:40:11.253 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+15:40:11.255 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin, RUN_DISPLAY_URL=http://10.5.0.32:8080/job/testPipeline/31/display/redirect, HUDSON_HOME=/var/lib/jenkins, RUN_CHANGES_DISPLAY_URL=http://10.5.0.32:8080/job/testPipeline/31/display/redirect?page=changes, JOB_URL=http://10.5.0.32:8080/job/testPipeline/, JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, BUILD_ID=31, JENKINS_NODE_COOKIE=2b310c1e-3dcc-4002-9698-a3d88b536a56, LANG=C.UTF-8, JOB_NAME=testPipeline, GRADLE_HOME=/opt/gradle, LD_LIBRARY_PATH=/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64:/usr/lib/jvm/java-1.8-openjdk/jre/../lib/amd64, NODE_LABELS=master, HUDSON_URL=http://10.5.0.32:8080/, JENKINS_SERVER_COOKIE=durable-1ad5dcce20513040e2a5573b6401cbab, WORKSPACE=/var/lib/jenkins/workspace/testPipeline/GradleHometask, PWD=/var/lib/jenkins/workspace/testPipeline/GradleHometask, JAVA_VERSION=8u151, JENKINS_URL=http://10.5.0.32:8080/, BUILD_TAG=jenkins-testPipeline-31, STAGE_NAME=Make build, GRADLE_VERSION=4.5.1, EXECUTOR_NUMBER=1, HUDSON_SERVER_COOKIE=18010bed04407a88, JOB_BASE_NAME=testPipeline, OLDPWD=/opt/gradle, CLASSPATH=/opt/gradle/lib/gradle-launcher-4.5.1.jar, BUILD_NUMBER=31, NODE_NAME=master, BUILD_DISPLAY_NAME=#31, BUILD_URL=http://10.5.0.32:8080/job/testPipeline/31/, HOSTNAME=adef55e8b1a2, JAVA_ALPINE_VERSION=8.151.12-r0, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, JOB_DISPLAY_URL=http://10.5.0.32:8080/job/testPipeline/display/redirect, HOME=/, SHLVL=3}
+15:40:11.257 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+15:40:11.257 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 45). The daemon log file: /var/lib/jenkins/workspace/testPipeline/GradleHometask/?/.gradle/daemon/4.5.1/daemon-45.out.log
+15:40:11.293 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 2nd build in daemon [uptime: 1 mins 8.261 secs, performance: 98%]
+15:40:11.294 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+15:40:11.294 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=52e568f7-0839-4e2a-93a4-7d6565152743,javaHome=/usr/lib/jvm/java-1.8-openjdk,daemonRegistryDir=/var/lib/jenkins/workspace/testPipeline/GradleHometask/?/.gradle/daemon,pid=45,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+:ZipSubProject:createzip
